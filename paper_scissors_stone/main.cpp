@@ -2,35 +2,15 @@
 #include "io.h"
 
 void judge(Player & a, Player & b){
-	if(a.inputed && b.inputed){
-		if(a.hand == b.hand){
-			cout << "== Tied ==" << endl;
-		}else{
-			if(a.hand == 1 && b.hand == 3){
-				cout << "== " << a.name <<" Win ==" << endl;
-			}else{
-				if(a.hand == 3 && b.hand == 1){
-					cout << "== " << b.name <<" Win ==" << endl;
-				}else{
-					if(a.hand > b.hand){
-						cout << "== " << a.name <<" Win ==" << endl;
-					}else{
-						cout << "== " << b.name <<" Win ==" << endl;
-					}
-				}
-			}
-		}
-		a.inputed = false;
-		b.inputed = false;
-	}
+
 }
 
 int main(){
 	Player p1,p2;
 	
-	Player::printName(p1);
+	// printName(p1) here
 	cout << " , ";
-	Player::printName(p2);
+	// printName(p2) here
 	cout << endl;
 	cout << "--- Start game (p1: A(paper)/S(Scissor)/D(Stone) | p2: J(paper)/K(Scissor)/L(Stone)) ---" << endl;
 	
